@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+$HOME/.config/lemonbar/bar.sh | lemonbar -f "CascadiaCode Nerd Font:size=12" -g 385x40+1045+850 -B "#000000" -F "#ffffff" | sh > /dev/null
+#sleep 3
+#$HOME/.config/lemonbar/workspaces.sh | lemonbar -f "CascadiaCode Nerd Font:size=18" -g 320x40+0+0 -d -B "#000000" -F "#ffffff" &
