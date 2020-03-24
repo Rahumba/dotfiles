@@ -1,4 +1,4 @@
-Xft.dpi: 148
+!Xft.dpi: 148
 Xft.antialias: true
 Xft.hinting: true
 Xft.rgba: rgb
@@ -6,55 +6,11 @@ Xft.autohint: true
 Xft.hintstyle: hintslight
 Xft.lcdfilter: lcdfilter
 
-!xterm*font:	*-fixed-*-*-*-18-*
-XTerm*faceName:	CascadiaCode Nerd Font
-XTerm*faceSize:	20
-XTerm*pointerShape: left_ptr
-XTerm*cursorBlink: true
-XTerm*BorderWidth: 0
-XTerm*internalBorder: 25
-
-XTerm*translations: #override \n\
-	Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
-	Ctrl Shift <Key>V: insert-selection(CLIPBOARD)
-
 Xcursor.theme: posy-white
-Xcursor.size: 48
+Xcursor.size: 16
+
+*.font: CascadiaCode Nerd Font:size=12:antialias=true
 
 ! special
 *.foreground:   #68615e
-*.background:   #f1efee
-*.cursorColor:  #68615e
-
-! black
-*.color0:       #1b1918
-*.color8:       #766e6b
-
-! red
-*.color1:       #f22c40
-*.color9:       #f22c40
-
-! green
-*.color2:       #5ab738
-*.color10:      #5ab738
-
-! yellow
-*.color3:       #d5911a
-*.color11:      #d5911a
-
-! blue
-*.color4:       #407ee7
-*.color12:      #407ee7
-
-! magenta
-*.color5:       #6666ea
-*.color13:      #6666ea
-
-! cyan
-*.color6:       #00ad9c
-*.color14:      #00ad9c
-
-! white
-*.color7:       #a8a19f
-*.color15:      #f1efee
-
+*.background:   #222222
