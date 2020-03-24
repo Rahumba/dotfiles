@@ -1,0 +1,2 @@
+#!/bin/sh
+while true; do xsetroot -name " $(corona)  $(vpn)  $(ether)  $(dte) "; sleep 1; done

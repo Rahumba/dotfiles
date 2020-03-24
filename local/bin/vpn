@@ -1,0 +1,3 @@
+#!/bin/sh
+VPN="$(ip a s | grep tun0 | grep inet | cut -d ' ' -f 6 ; ip a s | grep proton0 | grep inet | cut -d ' ' -f 6)"
+[ "$VPN" != "" ] && echo -e " $VPN" || echo -e " No VPN"

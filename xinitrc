@@ -9,4 +9,5 @@ xsetroot -cursor_name left_ptr &
 #xsetroot -solid grey &
 vmware-user &
 dunst &
+bar &
 exec dwm
