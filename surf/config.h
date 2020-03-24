@@ -47,7 +47,7 @@ static Parameter defconfig[ParameterLast] = {
 	[StrictTLS]           =       { { .i = 1 },     },
 	[Style]               =       { { .i = 1 },     },
 	[WebGL]               =       { { .i = 0 },     },
-	[ZoomLevel]           =       { { .f = 1.5 },   },
+	[ZoomLevel]           =       { { .f = 1 },   },
 };
 
 static UriParameters uriparams[] = {
@@ -71,7 +71,7 @@ static WebKitFindOptions findopts = WEBKIT_FIND_OPTIONS_CASE_INSENSITIVE |
         .v = (const char *[]){ "/bin/sh", "-c", \
              "prop=\"$(printf '%b' \"$(xprop -id $1 $2 " \
              "| sed \"s/^$2(STRING) = //;s/^\\\"\\(.*\\)\\\"$/\\1/\" && cat ~/.surf/bookmarks)\" " \
-             "| dmenu -fn 'Hack Nerd Font Mono:size=12' -l 10 -p \"$4\" -w $1)\" && " \
+             "| dmenu -fn 'CascadiaCode Nerd Font:size=12' -nb '#222222' -nf '#bbbbbb' -sb '#616673' -sf '#eeeeee' -l 10 -p \"$4\" -w $1)\" && " \
              "xprop -id $1 -f $3 8s -set $3 \"$prop\"", \
              "surf-setprop", winid, r, s, p, NULL \
         } \
