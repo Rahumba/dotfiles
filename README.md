@@ -6,3 +6,8 @@
 ### dwm screenshot
 
 ![dwm](/screenshots/screenshot_dwm.png?raw=true "dwm screenshot")
+
+
+### stumpwm screenshot
+
+![stumpwm](/screenshots/stumpwm.png?raw=true "stumpwm screenshot")
