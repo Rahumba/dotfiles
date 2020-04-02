@@ -1,0 +1,11 @@
+#!/bin/sh
+
+get_wttr(){
+	curl -s wttr.in/Fuerth\?format=3 | awk '{ print $2 " " $3 }' > $HOME/.cache/wttr
+}
+
+[ -f "$HOME/.cache/wttr" ] && TIMESTAT="$(stat -c %Y $HOME/.cache/wttr)" || $(get_wttr) ; TIMESTAT="$(stat -c %Y $HOME/.cache/wttr)"
+TIMEDATE="$(date +%s)"
+TIMEDIFF="$(($TIMEDATE-$TIMESTAT))"
+
+[ "$TIMEDIFF" -gt "3600" ] && $(get_wttr) || echo "$(cat $HOME/.cache/wttr | sed 's/☀/ /g' | sed 's/☁/ /g' | sed 's/⛅/ /g' | sed 's/🌦/ /g' |sed 's/+//g' | sed 's/️//g')"
