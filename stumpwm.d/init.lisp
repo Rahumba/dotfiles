@@ -12,7 +12,7 @@
 ; (run-shell-command "xsetroot -cursor_name left_ptr &")
 ; (run-shell-command "vmware-user &")
 ; (run-shell-command "picom &")
-(run-shell-command "hsetroot -fill Pictures/cyber_girl.jpg &")
+(run-shell-command "hsetroot -cover Pictures/cyber_girl.jpg &")
 
 ;;; workspaces
 (when *initializing*
