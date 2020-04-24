@@ -44,25 +44,49 @@
   (message "~a" vpn_status))
 
 ;;; show corona stats in mode-line
-(defcommand swm-corona-mode () ()
-  "show corona stats in mode-line"
-  (defparameter corona_stats (ignore-errors (uiop:run-program "corona" :output :string)))
-  (write (string-trim '(#\Newline) corona_stats)))
+; (defcommand swm-corona-mode () ()
+;   "show corona stats in mode-line"
+;   (defparameter corona_stats (ignore-errors (uiop:run-program "corona" :output :string)))
+;   (write (string-trim '(#\Newline) corona_stats)))
 
 ;;; show vpn status in mode-line
-(defcommand swm-vpn-mode () ()
-  "show vpn status in mode-line"
-  (defparameter vpn_status (ignore-errors (uiop:run-program "vpn" :output :string)))
-  (write (string-trim '(#\Newline) vpn_status)))
-
+; (defcommand swm-vpn-mode () ()
+;   "show vpn status in mode-line"
+;   (defparameter vpn_status (ignore-errors (uiop:run-program "vpn" :output :string)))
+;   (write (string-trim '(#\Newline) vpn_status)))
+   
 ;;; show weather in mode-line
-(defcommand swm-wttr-mode () ()
-  "show weather in mode-line"
-  (defparameter wttr_data (ignore-errors (uiop:run-program "wttr" :output :string)))
-  (write (string-trim '(#\Newline) wttr_data)))
+; (defcommand swm-wttr-mode () ()
+;   "show weather in mode-line"
+;   (defparameter wttr_data (ignore-errors (uiop:run-program "wttr" :output :string)))
+;   (write (string-trim '(#\Newline) wttr_data)))
 
 ;;; show ethernet ip in mode-line
-(defcommand swm-ether-mode () ()
-  "show ethernet ip in mode-line"
-  (defparameter ip_data (ignore-errors (uiop:run-program "ether" :output :string)))
-  (write (string-trim '(#\Newline) ip_data)))
+; (defcommand swm-ether-mode () ()
+;   "show ethernet ip in mode-line"
+;   (defparameter ip_data (ignore-errors (uiop:run-program "ether" :output :string)))
+;   (write (string-trim '(#\Newline) ip_data)))
+
+;;; NordVPN connections to country
+(defcommand vpn-connect () ()
+  "connects to NordVPN using the selected country"
+  (let ((country
+	 (second
+	  (select-from-menu (current-screen)
+			    '(("Germany" "de")
+			    ("USA" "us")
+			    ("UK" "gb")
+			    ("France" "fr")
+			    ("Czech Republic" "cz"))
+			    "Select country: "))))
+    (run-shell-command (format nil "nordvpn c ~a" country))))
+
+;;; NordVPN disconnect
+(defcommand vpn-disconnect () ()
+  "disconnect from NordVPN"
+  (run-shell-command (format nil "nordvpn d")))
+
+;;; run or raise Brave
+(defcommand brave () ()
+  "run or raise brave"
+  (run-or-raise "brave" '(:class "Brave-browser") t nil))
