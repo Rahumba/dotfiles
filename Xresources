@@ -1,16 +1,67 @@
-!Xft.dpi: 148
 Xft.antialias: true
 Xft.hinting: true
 Xft.rgba: rgb
 Xft.autohint: true
 Xft.hintstyle: hintslight
 Xft.lcdfilter: lcdfilter
+Xft.dpi: 96
 
 Xcursor.theme: posy-white
 Xcursor.size: 16
 
-*.font: CascadiaCode Nerd Font:size=12:antialias=true
+*.font: Iosevka Nerd Font:type=Bold:size=12:antialias=true
 
-! special
-*.foreground:   #68615e
-*.background:   #222222
+! my colors
+!*.foreground:   #B043D1
+!*.background:   #282A36
+!*.color0: #282A36
+!*.color1: #F37F97
+!*.color2: #5ADECD
+!*.color3: #F2A272
+!*.color4: #8897F4
+!*.color5: #C574DD
+!*.color6: #79E6F3
+!*.color7: #FDFDFD
+!*.color8: #666979
+!*.color9: #FF4971
+!*.color10:#18E3C8
+!*.color11:#FF8037
+!*.color12:#556FFF
+!*.color13:#B043D1
+!*.color14:#3FDCEE
+!*.color15:#BEBEC1
+
+! Dracula Xresources palette
+*.foreground: #F8F8F2
+*.background: #282A36
+*.color0:     #000000
+*.color8:     #4D4D4D
+*.color1:     #FF5555
+*.color9:     #FF6E67
+*.color2:     #50FA7B
+*.color10:    #5AF78E
+*.color3:     #F1FA8C
+*.color11:    #F4F99D
+*.color4:     #BD93F9
+*.color12:    #CAA9FA
+*.color5:     #FF79C6
+*.color13:    #FF92D0
+*.color6:     #8BE9FD
+*.color14:    #9AEDFE
+*.color7:     #BFBFBF
+*.color15:    #E6E6E6
+
+! st
+! *.cursorColor: #3FDCEE 
+*.cursorColor: #F8F8F2
+*.termname: st-256color
+*.shell: /bin/zsh
+*.xfps: 120
+*.actionfps: 60
+*.blinktimeout: 800
+*.bellvolume: 0
+*.tabspaces: 8
+*.borderpx: 15
+*.cwscale: 1.0
+*.chscale: 1.0
+*.alpha: 0.5

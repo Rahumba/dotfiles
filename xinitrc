@@ -1,13 +1,12 @@
-#!/bin/bash
+#!/bin/sh
 xrandr -s 1440x900 &
-#xrdb $HOME/.Xresources &
-#picom --conf $HOME/.config/picom_simple.conf &
-picom &
+xrdb -l $HOME/.Xresources &
 xsetroot -cursor_name left_ptr &
-#sxhkd &
-/home/florian/.fehbg &
-#xsetroot -solid grey &
 vmware-user &
-dunst &
-bar &
-exec dwm
+emacs --daemon &
+# bar &
+# sleep 1
+export GTK_THEME=Plata-Noir-Compact
+export QT_STYLE_OVERRIDE=gtk2
+export GDK_CORE_DEVICE_EVENTS=1
+exec stumpwm
