@@ -1,9 +1,9 @@
-* stumpwm screenshot (currently used)
+* dwm screenshot (currently used)
+
+[[/screenshots/dwm_new.png?raw=true]]
+
+* stumpwm screenshot
 
 [[/screenshots/stumpwm.png?raw=true]]
 
-
-* dwm screenshot
-
-[[/screenshots/dwm_new.png?raw=true]]
 

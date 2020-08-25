@@ -7,7 +7,7 @@
  */
 //static char *font = "Hack Nerd Font Mono:size=12:antialias=true:autohint=true";
 //static char *font = "FantasqueSansMono Nerd Font Mono:size=28:antialias=true:autohint=true";
-static char *font = "CascadiaCode Nerd Font:size=20:antialias=true:autohint=true";
+static char *font = "CascadiaCode Nerd Font:type=Medium:size=13:antialias=true:autohint=true";
 //static char *font = "Dina:size=20:antialias=true:autohint=true";
 static int borderpx = 20;
 unsigned int alpha = 0xf5;
@@ -88,8 +88,7 @@ unsigned int tabspaces = 8;
 /* Terminal colors (16 first used in escape sequence) */
 
 static const char *colorname[] = {
-	//"#282A36",
-    "#000000",
+	"#282A36",
 	"#F37F97",
 	"#5ADECD",
 	"#F2A272",
