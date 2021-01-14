@@ -1,4 +1,8 @@
-* dwm screenshot (currently used)
+* 2bwm screenshot (currently used)
+
+[[/screenshots/2bwm.png?raw=true]]
+
+* dwm screenshot
 
 [[/screenshots/dwm_new.png?raw=true]]
 
