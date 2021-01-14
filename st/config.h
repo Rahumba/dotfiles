@@ -7,7 +7,7 @@
  */
 //static char *font = "Hack Nerd Font Mono:size=12:antialias=true:autohint=true";
 //static char *font = "FantasqueSansMono Nerd Font Mono:size=28:antialias=true:autohint=true";
-static char *font = "CascadiaCode Nerd Font:type=Medium:size=13:antialias=true:autohint=true";
+static char *font = "DejaVu Sans Mono:type=Medium:size=10:antialias=true:autohint=true";
 //static char *font = "Dina:size=20:antialias=true:autohint=true";
 static int borderpx = 20;
 unsigned int alpha = 0xf5;
@@ -139,6 +139,39 @@ static unsigned int mousebg = 0;
  */
 static unsigned int defaultattr = 11;
 
+/*
+ * Xresources preferences to load at startup
+ */
+ResourcePref resources[] = {
+		{ "font",         STRING,  &font },
+		{ "color0",       STRING,  &colorname[0] },
+		{ "color1",       STRING,  &colorname[1] },
+		{ "color2",       STRING,  &colorname[2] },
+		{ "color3",       STRING,  &colorname[3] },
+		{ "color4",       STRING,  &colorname[4] },
+		{ "color5",       STRING,  &colorname[5] },
+		{ "color6",       STRING,  &colorname[6] },
+		{ "color7",       STRING,  &colorname[7] },
+		{ "color8",       STRING,  &colorname[8] },
+		{ "color9",       STRING,  &colorname[9] },
+		{ "color10",      STRING,  &colorname[10] },
+		{ "color11",      STRING,  &colorname[11] },
+		{ "color12",      STRING,  &colorname[12] },
+		{ "color13",      STRING,  &colorname[13] },
+		{ "color14",      STRING,  &colorname[14] },
+		{ "color15",      STRING,  &colorname[15] },
+		{ "background",   STRING,  &colorname[256] },
+		{ "foreground",   STRING,  &colorname[257] },
+		{ "cursorColor",  STRING,  &colorname[258] },
+		{ "termname",     STRING,  &termname },
+		{ "shell",        STRING,  &shell },
+		{ "blinktimeout", INTEGER, &blinktimeout },
+		{ "bellvolume",   INTEGER, &bellvolume },
+		{ "tabspaces",    INTEGER, &tabspaces },
+		{ "borderpx",     INTEGER, &borderpx },
+		{ "cwscale",      FLOAT,   &cwscale },
+		{ "chscale",      FLOAT,   &chscale },
+};
 /*
  * Internal mouse shortcuts.
  * Beware that overloading Button1 will disable the selection.
