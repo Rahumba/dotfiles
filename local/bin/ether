@@ -1,3 +1,3 @@
 #!/bin/sh
-NET="$(ip a s | grep ens160 | grep inet | cut -d ' ' -f 6)"
-echo -e " $NET"
+NET="$(ip a s | grep enp0s3 | grep inet | cut -d ' ' -f 6)"
+echo -e " $NET"

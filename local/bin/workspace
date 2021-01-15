@@ -1,0 +1,18 @@
+#!/bin/env bash
+
+# colors
+foreground="#B043D1"
+background="#282A36"
+color1="#3FDCEE"
+
+# get current workspace 
+workspace=$(($(xprop -root _NET_CURRENT_DESKTOP | awk '{print $3}') +1))
+
+# print symbols according to workspace
+case "$workspace" in
+	1) echo -e " %{F$color1}● %{F$foreground}○ ○ ○ ○" ;;
+	2) echo -e " ○ %{F$color1}● %{F$foreground}○ ○ ○" ;;
+	3) echo -e " ○ ○ %{F$color1}● %{F$foreground}○ ○" ;;
+	4) echo -e " ○ ○ ○ %{F$color1}● %{F$foreground}○" ;;
+	5) echo -e " ○ ○ ○ ○ %{F$color1}●%{F$foreground}" ;;
+esac
