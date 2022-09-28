@@ -4,7 +4,7 @@
 
 * dwm screenshot
 
-[[/screenshots/dwm_new.png?raw=true]]
+[[/screenshots/dwm.png?raw=true]]
 
 * stumpwm screenshot
 
