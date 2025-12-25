@@ -1,6 +1,6 @@
 * niri screenshot (current)
 
-[[/screehots/niri.png?raw=true]]
+[[/screenshots/niri.png?raw=true]]
 
 * 2bwm screenshot
 
