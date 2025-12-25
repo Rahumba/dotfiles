@@ -1,0 +1,13 @@
+ignore-empty-password
+color=282a36
+font=Hack Nerd Font
+indicator-thickness=5
+ring-color=bd93f9
+key-hl-color=50fa7b
+ring-ver-color=8be9fd
+inside-ver-color=8be9fd
+ring-wrong-color=ff5555
+inside-wrong-color=ff5555
+ring-clear-color=ffb86c
+inside-clear-color=ffb86c
+inside-color=44475a

@@ -1,0 +1,16 @@
+background-color=#282a36
+text-color=#f8f8f2
+border-color=#bd93f9
+font=Hack Nerd Font 15
+margin=15
+default-timeout=10000
+height=2000
+width=500
+anchor=top-center
+group-by=app-name
+max-visible=-1
+layer=overlay
+
+
+[grouped]
+format=<b>%s</b>\n<i>%gx %a</i>

@@ -1,0 +1,68 @@
+/** {
+    font-family: 'Hack Nerd Font Mono';
+} */
+
+@import url("./colors.css");
+* {
+    border: none;
+    border-radius: 0;
+    font-family: Hack Nerd Font;
+    font-size: 12pt;
+    min-height: 0;
+}
+window#waybar {
+    opacity: 0.9;
+    background: @background-darker;
+    color: @foreground;
+    border-bottom: 2px solid @background;
+}
+#window {
+    padding-left: 400px;
+}
+#workspaces button {
+    padding: 0 10px;
+    background: @background;
+    color: @foreground;
+}
+#workspaces button:hover {
+    box-shadow: inherit;
+    text-shadow: inherit;
+    background-image: linear-gradient(0deg, @selection, @background-darker);
+}
+#workspaces button.focused,
+#workspaces button.active {
+    background-image: linear-gradient(0deg, @purple, @selection);
+}
+#workspaces button.urgent {
+    background-image: linear-gradient(0deg, @red, @background-darker);
+}
+#taskbar button.active {
+    background-image: linear-gradient(0deg, @selection, @background-darker);
+}
+#tray {
+    padding-right: 15px;
+    border-right: 2px solid @purple;
+    border-bottom: 2px solid @background;
+}
+#clock {
+    padding: 0 4px;
+    background: @background-darker;
+    border-bottom: 2px solid @background;
+    border-bottom: 2px solid @background;
+}
+#network {
+    padding-right: 10px;
+    border-right: 2px solid @purple;
+    border-bottom: 2px solid @background;
+}
+#pulseaudio {
+    padding-right: 10px;
+    border-right: 2px solid @purple;
+    border-bottom: 2px solid @background;
+}
+#idle_inhibitor {
+    padding-right: 12px;
+    border-right: 2px solid @purple;
+    border-bottom: 2px solid @background;    
+}
+
